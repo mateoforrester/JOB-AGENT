@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 9pt;
+    color: #333;
+    background: white;
+    width: 210mm;
+  }
+
+  .header {
+    background: #2d3e50;
+    color: white;
+    padding: 26px 36px 26px 36px;
+    min-height: 110px;
+  }
+
+  .header-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid rgba(255,255,255,0.65);
+    float: left;
+    margin-right: 20px;
+    margin-top: 4px;
+    filter: brightness(1.12) contrast(1.05);
+  }
+
+  .header-text h1 {
+    font-family: Arial, sans-serif;
+    font-size: 28pt;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: white;
+    padding-top: 10px;
+  }
+
+  .header-text h2 {
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-top: 8px;
+    color: rgba(255,255,255,0.88);
+    text-transform: uppercase;
+  }
+
+  .header-clear { clear: both; }
+
+  .body {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    min-height: 257mm;
+  }
+
+  .sidebar {
+    display: table-cell;
+    width: 36%;
+    background: #efefef;
+    padding: 20px 16px 20px 18px;
+    vertical-align: top;
+    height: 100%;
+  }
+
+  .sidebar-section { margin-bottom: 18px; }
+
+  .sidebar-section h3 {
+    font-family: Arial, sans-serif;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #bbb;
+  }
+
+  .sidebar-section p {
+    font-size: 8pt;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 3px;
+  }
+
+  .contact-item {
+    display: table;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 7.5pt;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  .contact-item .icon-cell {
+    display: table-cell;
+    width: 18px;
+    vertical-align: top;
+    padding-top: 1px;
+  }
+
+  .contact-item .text-cell {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .contact-item .icon { width: 13px; height: 13px; }
+
+  .skills-block { font-size: 8pt; line-height: 1.65; color: #444; }
+  .skills-block .skill-row { margin-bottom: 7px; }
+  .skills-block .skill-label { font-weight: 700; text-decoration: underline; color: #333; }
+
+  .main {
+    display: table-cell;
+    width: 64%;
+    padding: 20px 24px 20px 22px;
+    background: white;
+    vertical-align: top;
+    height: 100%;
+  }
+
+  .main-section { margin-bottom: 16px; }
+
+  .main-section h3 {
+    font-family: Arial, sans-serif;
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #bbb;
+  }
+
+  .edu-item { margin-bottom: 8px; }
+  .edu-item .school { font-weight: 700; font-size: 8.5pt; color: #222; }
+  .edu-item .degree { font-weight: 700; font-size: 8pt; color: #333; }
+  .edu-item ul { margin-top: 2px; padding-left: 13px; }
+  .edu-item ul li { font-size: 7.5pt; color: #555; line-height: 1.5; }
+
+  .cert-item { font-weight: 700; font-size: 8.5pt; color: #222; }
+
+  .exp-title { font-weight: 700; font-size: 9pt; color: #222; margin-bottom: 2px; }
+  .exp-date { font-size: 7.5pt; color: #e67e22; margin-bottom: 5px; }
+  .exp-item ul { padding-left: 13px; }
+  .exp-item ul li { font-size: 8pt; color: #444; line-height: 1.6; margin-bottom: 1px; }
+  .exp-stack { font-size: 7.5pt; color: #777; margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img class="header-photo" src="../assets/photo.jpg" alt="Mateo Forrester">
+  <div class="header-text">
+    <h1>MATEO FORRESTER</h1>
+    <h2>Software Engineer &nbsp;|&nbsp; Node.js · APIs REST · Cloud AWS · IA</h2>
+  </div>
+  <div class="header-clear"></div>
+</div>
+
+<!-- BODY -->
+<div class="body">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-section">
+      <h3>Sobre Mi</h3>
+      <p>Software Engineer con 4+ años en entornos financieros de alta exigencia, especializado en construcción de APIs REST escalables, integración de sistemas y automatización de procesos en producción.</p>
+      <p>Sólida base en JavaScript, arquitecturas orientadas a eventos y cloud (AWS Certified). Actualmente con foco en desarrollo de agentes de IA e integración de modelos en aplicaciones reales.</p>
+      <p>Experiencia trabajando en equipos ágiles Scrum con metodologías de entrega continua y colaboración directa con el cliente.</p>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Contacto</h3>
+      <div class="contact-item">
+        <div class="icon-cell">
+          <svg class="icon" viewBox="0 0 24 24" fill="#555"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <div class="text-cell">CABA, Argentina</div>
+      </div>
+      <div class="contact-item">
+        <div class="icon-cell">
+          <svg class="icon" viewBox="0 0 24 24" fill="#555"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div class="text-cell">mateoforrester26@gmail.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="icon-cell">
+          <svg class="icon" viewBox="0 0 24 24" fill="#555"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <div class="text-cell">11-3196-0669</div>
+      </div>
+      <div class="contact-item">
+        <div class="icon-cell">
+          <svg class="icon" viewBox="0 0 24 24" fill="#555"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </div>
+        <div class="text-cell">linkedin.com/in/mateoforrester</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Habilidades</h3>
+      <div class="skills-block">
+        <div class="skill-row">
+          <span class="skill-label">Backend / APIs:</span> JavaScript, Java, APIs REST &amp; SOAP, Node.js, JSON, XML, SQL Server.
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Cloud:</span> AWS (Certified Cloud Practitioner), GCP.
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">IA / Agentes:</span> Claude Code, Gemini, integración de modelos y agentes de IA.
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Frontend:</span> React, React Native, HTML, CSS.
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Herramientas:</span> Git, Postman, SoapUI, IBM BPM, Integration Designer.
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Metodologías:</span> Scrum, entrega continua, refinamiento con cliente.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="main-section">
+      <h3>Educación</h3>
+      <div class="edu-item">
+        <div class="school">Coderhouse</div>
+        <div class="degree">Curso de Data Analytics &amp; Data Science · 2023</div>
+        <ul><li>Python, análisis de datos, visualización, dashboards, modelos predictivos.</li></ul>
+      </div>
+      <div class="edu-item">
+        <div class="school">Universidad de Buenos Aires</div>
+        <div class="degree">Licenciatura en Sistemas de Información · 2017 – 2022</div>
+      </div>
+      <div class="edu-item">
+        <div class="school">St Brendan's College</div>
+        <div class="degree">Bachillerato Bilingüe con orientación en Ciencias Exactas (IGCSE, DELF A1 &amp; A2)</div>
+      </div>
+    </div>
+
+    <div class="main-section">
+      <h3>Certificaciones</h3>
+      <div class="cert-item">AWS Certified Cloud Practitioner · 2025</div>
+    </div>
+
+    <div class="main-section">
+      <h3>Experiencia Laboral</h3>
+      <div class="exp-item">
+        <div class="exp-title">Software Engineer – IBM (Proyecto Banco Galicia)</div>
+        <div class="exp-date">Diciembre 2021 - Actualmente</div>
+        <ul>
+          <li>Diseñé y desarrollé APIs REST y SOAP robustas y escalables en entorno financiero enterprise, con manejo de errores y resiliencia en producción.</li>
+          <li>Implementé lógica de negocio en JavaScript con validaciones complejas, condicionales y flujos de integración orientados a eventos.</li>
+          <li>Construí servicios de integración en Java consumiendo y exponiendo APIs externas con contratos JSON y XML.</li>
+          <li>Colaboré en equipos multidisciplinarios bajo Scrum: refinamiento de historias con el cliente (Banco Galicia), planificación de sprints y demos.</li>
+          <li>Automaticé procesos bancarios end-to-end: análisis de requerimientos, modelado, desarrollo, pruebas unitarias e integración, y documentación técnica.</li>
+          <li>Resolví incidentes en producción en entornos cloud-compatible de alta disponibilidad.</li>
+        </ul>
+        <div class="exp-stack">Tecnologías: JavaScript, Java, APIs REST/SOAP, JSON/XML, SQL Server, Git, Postman, IBM BPM, Integration Designer.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

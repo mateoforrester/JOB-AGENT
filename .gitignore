@@ -1,0 +1,6 @@
+scripts/gmail_credentials.json
+*.env
+.env
+cvs_cloud/
+memory/sent_vacantes.json
+*.json
